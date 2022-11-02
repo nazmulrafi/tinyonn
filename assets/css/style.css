@@ -1,0 +1,118 @@
+/*!
+ * Template Name/Project Name: XYZ
+ * Developer Name: Mr ABC
+ * Conatct: abc@gmail.com
+ * Visit: https://abc.info
+ */
+ /* common code start */
+ @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+    margin: 0;
+    padding: 0;
+}
+ :root{
+    --brand-color: #87d37c;
+    --white-color: #fff;
+    --black-color: #2d3950;
+ }
+ .text-uppercase{
+    text-transform: uppercase;
+ }
+ /* common code end */
+ /* header start */
+ header{
+    background: #fcdb00;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ .navbar{
+    background: #fcdb00;
+ }
+.navbar-nav .nav-item .nav-link{
+    color: #010101;
+    font-weight: 400;
+    font-size: 22px;
+    position: relative;
+}
+.default_nav_active::after {
+    width: 100% !important;
+}
+.default_nav_active{
+    color: #010101 !important;
+}
+.navbar-nav .nav-item .nav-link::after {
+    width: 0%;
+    height: 2px;
+    background: #010101;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    content: " ";
+    transition: .5s;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #010101;
+}
+.navbar-nav .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+
+/* carousel start */
+.carousel{
+    padding: 90px;
+}
+.yo h3{
+   padding-top: 80px;
+   color: #010101;
+   font-weight: bold;
+   font-size: 32px;
+}
+.yo p{
+   padding: 30px 0px 30px 0px;
+   width: 330px;
+   font-size: 20px;
+   line-height: 24px;
+   color: #313841;
+}
+.yo h5{
+   width: 480px;
+   font-size: 16px;
+   line-height: 20px;
+   color: #555555;
+   padding-bottom: 30px;
+}
+.iifffcon{
+   padding: 0px 10px;
+}
+.iicon a i{
+   font-size: 42px;
+   color: #010101;
+   
+}
+.carousel-indicators [data-bs-target] {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.carousel-indicators {
+    margin-bottom: 1rem;
+}
+/* carousel end */
+ /* nav code end */
+ /* header end */
+ 
